@@ -9,7 +9,7 @@ dotenv.config();
 connectDB();
 const app = express();
 
-const allowedOrigins = ["http://localhost:5173"];
+const allowedOrigins = ["https://sams-frontend-otwm.onrender.com"];
 
 app.use(
   cors({
