@@ -26,7 +26,7 @@ const Login = () => {
       axios.defaults.withCredentials = true;
 
       const { data } = await axios.post(
-        "http://localhost:4000/sams/auth/login",
+        `${import.meta.env.VITE_BACKEND_URL}/auth/login`,
         {
           activeTab,
           rollno,
