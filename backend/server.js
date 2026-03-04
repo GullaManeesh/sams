@@ -9,13 +9,11 @@ dotenv.config();
 connectDB();
 const app = express();
 
-const allowedOrigins = ["https://sams-frontend-otwm.onrender.com"];
-
 app.use(
   cors({
-    origin: allowedOrigins,
-    credentials: true,
-  })
+    origin: "*",
+    credentials: false,
+  }),
 );
 
 app.use(cookieParser());
